@@ -1,0 +1,19 @@
+package com.training.beans;
+
+import java.util.Date;
+
+public class Employee {
+
+	private int empno;
+	private String leaveType;
+	private String Reason;
+	private Date startDate;
+	private Date endDate;
+	
+	public Employee() {
+		super();
+	}
+	
+	
+	
+}

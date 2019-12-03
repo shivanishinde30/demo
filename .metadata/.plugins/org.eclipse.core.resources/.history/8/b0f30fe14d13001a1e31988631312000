@@ -1,0 +1,14 @@
+package com.training.dao;
+
+import java.util.List;
+
+import com.training.beans.Employee;
+
+public class EmpDao {
+
+	public List<Employee> getEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

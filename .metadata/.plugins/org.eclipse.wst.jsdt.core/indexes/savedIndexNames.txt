@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+/home/iet/Desktop/190845920108/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+963446586.index

@@ -1,0 +1,25 @@
+package com.training.dao;
+
+import java.sql.ResultSet;
+import java.util.List;
+
+import com.training.beans.Employee;
+
+public class EmpDao {
+
+	public List<Employee> getEmployees() {
+		 Object template;
+		return ((Object) template).query("select * from Emp99",new RowMapper<Emp>(){    
+		        public Employee mapRow(ResultSet rs, int row) throws SQLException {    
+		        	Employee e=new Employee();    
+		            e.setEmpno(rs.getInt(1));    
+		            e.setLeaveType(rs.getString(2));    
+		            e.setReason(rs.getString(3));    
+		            e.setStartDate(rs.getDate(4));  
+		            e.setEndDate(rs.getDate(5));
+		            return e;    
+		        }    
+		    });    
+	}
+
+}

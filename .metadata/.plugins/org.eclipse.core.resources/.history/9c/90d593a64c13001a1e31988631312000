@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Employees List</h1>  
+<table border="2" width="70%" cellpadding="2">  
+<tr><th>Id</th><th>Name</th><th>Salary</th><th>Designation</th><th>Edit</th><th>Delete</th></tr>  
+   <c:forEach var="emp" items="${list}">   
+   <tr>  
+   <td>${emp.empno}</td>  
+   <td>${emp.leaveType}</td>  
+   <td>${emp.Reason}</td>  
+   <td>${emp.startDate}</td> 
+   <td>${emp.endDate}</td>  
+   
+   </tr>  
+   </c:forEach>  
+   </table>  
+   <br/>  
+   <a href="empform">Add New Employee</a>  
+</body>
+</html>
